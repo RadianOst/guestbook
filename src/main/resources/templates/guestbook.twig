@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Guestbook</title>
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+
+    <body>
+        <h1>Simple Guestbook</h1>
+
+        <form method="post">
+            <p>Message</p>
+            <textarea rows="5" cols="50" name="message" required></textarea>
+            <p>Name</p>
+            <input type="text" name="name" required><br>
+            <input type="submit">
+        </form>
+        ______________________________________________________
+        <div class="guests">
+            {% for guest in guests %}
+                <div class="guest">
+                    <p>{{ guest.getMessage() }}</p><br>
+                    <p><b>Name:</b> {{ guest.getName() }}</p><br>
+                    <p><b>Date:</b> {{ guest.getDate() }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </body>
+</html>

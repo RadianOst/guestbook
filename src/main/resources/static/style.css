@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+}
+
+h1{
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+p{
+    margin: 5px;
+}
+
+input{
+    margin: 5px;
+}
+
+textarea{
+    margin: 5px;
+    resize: none;
+}
+
+.guest{
+    border: 1px solid black;
+    margin: 2px 5px;
+    padding: 5px;
+    width: 50%;
+}
+
+.guest p{
+    display: inline;
+}
